@@ -1,7 +1,7 @@
 import { Container, Flex, Text, HStack, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { PlusSquareIcon } from '@chakra-ui/icons';
-import { useColorMode } from './ui/color-mode';
+import { useColorMode, useColorModeValue } from './ui/color-mode';
 
 import { IoMoon } from 'react-icons/io5';
 import { LuSun } from 'react-icons/lu';
@@ -35,7 +35,10 @@ const Navbar = () => {
             </Text>
             <HStack spacing={2} alignItems={"center"}>
                 <Link to={"/create"}>
-                     <Button>
+                     <Button bg={useColorModeValue("blue.500", "blue.500")}
+                     _hover={{ bg: "blue.600" }}
+                     _active={{ bg: "blue.500", opacity: 0.7 }}
+                     >
                         <PlusSquareIcon fontSize={20}/>
                      </Button>
                 </Link>
