@@ -4,13 +4,13 @@ import jsconfigPaths from "vite-jsconfig-paths"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), jsconfigPaths()],
-  server:{
-    proxy:{
-      "/api":{
-        target:"http//localhost:5000"
-      }
-    }
-  },
+  // server:{
+  //   proxy:{
+  //     "/api":{
+  //       target:"http//localhost:5000"
+  //     }
+  //   }
+  // },
   define: {
     'process.env.NODE_ENV': JSON.stringify('development'),
   },

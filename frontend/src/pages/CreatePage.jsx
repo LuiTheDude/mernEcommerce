@@ -15,7 +15,9 @@ const CreatePage = () => {
   const handleAddProduct = async () => {
     const { success, message } = await createProduct(newProduct);
     console.log("Success: ", success);
-    console.log("Message: ", message);
+    console.log("Message: ", message); 
+    console.log(newProduct);
+    
   }
 
   return (
