@@ -14,15 +14,43 @@
         <a href="https://youtu.be/80D4y5BfckY?si=-vopoeiC3980agMs" target="_blank">
             <button>Enjoy Youtube</button>
         </a>
-        <h2>products</h2>
+        
+        <h2>Products</h2>
         <ol>
-            <li>smart watch</li>
+            <li>Smart Watch</li>
             <img src="images/smartwatch.png" alt="smart watch photo">    
-            <li>smartphone</li>
+            <li>Smartphone</li>
             <img src="images/smartphone.png" alt="smartphone photo">
-            <li>laptop</li>
+            <li>Laptop</li>
             <img src="images/laptop.png" alt="laptop photo">
-
         </ol>
+
+        <hr>
+
+        <h2>Select Products</h2>
+        <form action="submit_form.php" method="post">
+            <label>
+                <input type="checkbox" name="products" value="smartwatch"> Smart Watch
+            </label><br>
+            <label>
+                <input type="checkbox" name="products" value="smartphone"> Smartphone
+            </label><br>
+            <label>
+                <input type="checkbox" name="products" value="laptop"> Laptop
+            </label><br>
+
+            <h2>Rate Our Website</h2>
+            <label>
+                <input type="radio" name="rating" value="best"> Best
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="average"> Average
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="worst"> Worst
+            </label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
